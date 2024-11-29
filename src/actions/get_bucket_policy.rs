@@ -46,6 +46,7 @@ impl<'a> GetBucketPolicy<'a> {
             headers: Map::new(),
         }
     }
+
     pub fn parse_response(s: &str) -> Result<GetBucketPolicyResponse, serde_json::Error> {
         serde_json::from_str(s)
     }
